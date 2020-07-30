@@ -1,0 +1,22 @@
+Author Philemon Hini 
+
+Get data from clipboard and extract the IP sorting it  uniquely 
+
+ pbpaste |grep  -oE '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | sort -u 
+
+
+
+
+
+Exclude  private IP addresses from a list of ips 
+
+cat ips.txt | grep -Ev '^(192\.168|10\.|172\.1[6789]\.|172\.2[0-9]\.|172\.3[01]\.)'
+
+
+
+Replay a traffic through an interface 
+
+tcpreplay -i en01 -t *.pcapng 
+
+-i interface name 
+-t fasters speed 
