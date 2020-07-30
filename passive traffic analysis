@@ -24,6 +24,6 @@ tcpreplay -i en01 -t *.pcapng
 
 
 Tshark 
-loop through a list of packets and extract some fields in the packert. Use awk to print column 1 out ---> I needed the source IP to also be saved in a separate file 
+loop through a list of packets and extract some fields in the packet. Use awk to print column 1 out ---> I needed the source IP to also be saved in a separate file 
 
 ls | grep .pcapng | while read f; do ( tshark -T fields -r $f -e ip.src -e tcp.srcport -e ip.dst -e tcp.dstport -e _ws.col.Protocol -E separator=, -E header=y | tee -a ips.txt | awk 'BEGIN{FS=","}; {print $1}'); done  
