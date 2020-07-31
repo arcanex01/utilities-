@@ -13,7 +13,7 @@ Get data from clipboard and extract the IP sorting it  uniquely
 
 Exclude  private IP addresses from a list of ips 
 
-cat ips.txt | grep -Ev '^(192\.168|10\.|172\.1[6789]\.|172\.2[0-9]\.|172\.3[01]\.)'
+cat file_name | grep -Ev '^(192\.168|10\.|172\.1[6789]\.|172\.2[0-9]\.|172\.3[01]\.)'
 
 
 
