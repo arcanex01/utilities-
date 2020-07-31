@@ -5,7 +5,7 @@ Get data from clipboard and extract the IP sorting it  uniquely
  pbpaste |grep  -oE '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | sort -u 
  
  cat file_name |grep  -oE '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | sort -u 
- cat file_name | sort -u 
+ cat file_name | sort -u > out_putfile_name.txt
 
 
 
