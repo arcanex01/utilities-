@@ -1,0 +1,5 @@
+Kape 
+.\kape.exe --tsource C: --target EventLogs,PowerShellConsole,ProgramData,Registry,RegistryHives,RecycleBin,FileSystem,LogFiles,Prefetch,SRUM,WindowsTimeline,USBDevices --tdest C:\artifacts --vss --module CrowdResponse,Hindsight,LECmd,MFTECmd,RBCmd,RECmd_BatchExamples,SBECmd,SQLECmd_Hunt,WxTCmd --mdest C:\modules_output --zip artifacts
+
+
+
